@@ -1,0 +1,5 @@
+/Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.AssemblyInfoInputs.cache
+/Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.AssemblyInfo.cs
+/Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.csproj.CoreCompileInputs.cache
+/Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.sourcelink.json
