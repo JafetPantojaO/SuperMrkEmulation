@@ -13,9 +13,11 @@ namespace ListsDev
         public const int INITIAL_CAPACITY =10;
         private T[] data;
         public int Capacity { get; private set; }
-        public int Size => Size == index + 1;
+        private int index = -1;
 
-        public bool Empty => Size == -1;
+        public int Size => index + 1;
+
+        public bool Empty => index == -1;
 
         public ArrayList(IEnumerable<T> elements): this()
         {
