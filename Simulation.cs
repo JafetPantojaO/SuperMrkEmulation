@@ -8,8 +8,8 @@ namespace SimMarket
     {
         private readonly Random _random;
 
-        private readonly IList<Customer> _customersInStore;
-        private readonly IList<CashierLane> _lanes;
+        private readonly LinkedListDev.IList<Customer> _customersInStore;
+        private readonly LinkedListDev.IList<CashierLane> _lanes;
 
         public int Iteration { get; private set; }
         public int AbandonedCustomers { get; private set; }

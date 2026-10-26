@@ -1,13 +1,12 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LinkedListDev;
 
 namespace ListsDev
 {
-    internal class ArrayList<T> : IList<T>
+    public class ArrayList<T> : LinkedListDev.IList<T>
     {
 
         public const int INITIAL_CAPACITY =10;
@@ -34,7 +33,7 @@ namespace ListsDev
             index = -1;
         }
 
-        public ArrayLists() : this(INITIAL_CAPACITY) { }
+        public ArrayList() : this(INITIAL_CAPACITY) { }
 
         public T Get(int index) => data[index];
 
@@ -178,10 +177,10 @@ namespace ListsDev
               }
             }
 
-            return default(T);
+            return default(T)!;
         }
 
-        public IList<T> FindAll(Predicate<T> match)
+        public LinkedListDev.IList<T> FindAll(Predicate<T> match)
         {
             var newList = new ArrayList<T>();
         

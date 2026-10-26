@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QueueDev
 {
-    internal interface IQueue<T>
+    public interface IQueue<T>
     {
         int Size { get; } //Tamaño de los datos
         bool Empty { get; } //Ver si esta vacio

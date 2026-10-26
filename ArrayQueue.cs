@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QueueDev
 {
-    internal class ArrayQueue<T> : IQueue<T>
+    public class ArrayQueue<T> : IQueue<T>, IEnumerable<T>
     {
         private int INITIAL_CAPACITY = 10;
         private T[] data;
@@ -100,6 +100,19 @@ namespace QueueDev
         {
             Array.Clear(data, 0, Size);
             index = -1;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            for (int i = 0; i <= index; i++)
+            {
+                yield return data[i];
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
 
         public override string ToString()

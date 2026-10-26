@@ -8,6 +8,7 @@ namespace SimMarket
 
         public int TotalProducts { get; }
         public int PendingProducts { get; private set; }
+        public int PendingCheckoutProducts { get; private set; }
 
         public int CollectionInterval { get; }
         public int CollectionAmount { get; }
@@ -20,12 +21,14 @@ namespace SimMarket
         public bool IsInCheckoutQueue { get; set; }
 
         public bool FinishedCollecting => PendingProducts == 0;
+        public bool FinishedCheckout => PendingCheckoutProducts == 0;
 
         public Customer(int totalProducts, int collectionInterval, int collectionAmount, bool isPreferent)
         {
             Id = _nextId++;
             TotalProducts = totalProducts;
             PendingProducts = totalProducts;
+            PendingCheckoutProducts = totalProducts;
             CollectionInterval = collectionInterval;
             CollectionAmount = collectionAmount;
             IsPreferent = isPreferent;
@@ -43,6 +46,17 @@ namespace SimMarket
                 IterationsSinceLastCollection = 0;
                 PendingProducts -= CollectionAmount;
                 if (PendingProducts < 0) PendingProducts = 0;
+            }
+        }
+
+        //Se llama cada iteración mientras esté en caja de cobro
+        public void ProcessCheckout(int amount)
+        {
+            if (amount <= 0) return;
+            PendingCheckoutProducts -= amount;
+            if (PendingCheckoutProducts < 0)
+            {
+                PendingCheckoutProducts = 0;
             }
         }
 

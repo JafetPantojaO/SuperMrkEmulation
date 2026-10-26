@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperMrk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc3d35769c4bf085a0eaa2e7101e0ecd1c458090")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dba4da2a6deeded0caff704c826e362a2f38c99")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperMrk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperMrk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
