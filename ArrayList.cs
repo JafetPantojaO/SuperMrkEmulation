@@ -106,11 +106,29 @@ namespace ListsDev
         }
         public bool Contains(T element)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < Size; i++)
+            {
+                if (EqualityComparer<T>.Default.Equals(data[i], element))
+                {
+                    return true;
+                }
+            }
+            return false;
         }
         public void RemoveAt(int index)
         {
-            throw new NotImplementedException();
+            if (index < 0 || index >= Size)
+            {
+                throw new IndexOutOfRangeException("Index");
+            }
+
+            for (int i = index; i < Size - 1; i++)
+            {
+                data[i] = data[i + 1];
+            }
+
+            data[this.index] = default(T)!;
+            this.index--;
         }
 
         public void Clear()
@@ -194,6 +212,7 @@ namespace ListsDev
 
             return newList;
         }
+
 
 
     }

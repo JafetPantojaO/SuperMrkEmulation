@@ -13,3 +13,19 @@
 /Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.pdb
 /Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/SuperMrk.genruntimeconfig.cache
 /Users/phoneservicemid/Desktop/SuperMrk/obj/Debug/net10.0/ref/SuperMrk.dll
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.GeneratedMSBuildEditorConfig.editorconfig
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.AssemblyInfoInputs.cache
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.AssemblyInfo.cs
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.csproj.CoreCompileInputs.cache
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.sourcelink.json
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.dll
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\refint\SuperMrk.dll
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.pdb
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\bin\Debug\net10.0\SuperMrk.exe
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\bin\Debug\net10.0\SuperMrk.deps.json
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\bin\Debug\net10.0\SuperMrk.runtimeconfig.json
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\bin\Debug\net10.0\SuperMrk.dll
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\bin\Debug\net10.0\SuperMrk.pdb
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.genruntimeconfig.cache
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\ref\SuperMrk.dll
+C:\3semestre\Estructura de Datos\Proyecto\Proyecto_4\obj\Debug\net10.0\SuperMrk.csproj.Up2Date
