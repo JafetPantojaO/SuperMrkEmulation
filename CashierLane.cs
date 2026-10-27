@@ -25,11 +25,9 @@ namespace SimMarket
             Queue = new ArrayQueue<Customer>(SimulationConfig.MAX_CUSTOMERS_PER_CASHIER);
         }
 
-        /// <summary>
         /// Determina si un cliente cumple las condiciones para formarse en esta caja.
         /// - En cajas normales: todos los clientes son elegibles.
         /// - En cajas rápidas: clientes con productos <= EXPRESS_LANE_MAX_PRODUCTS o si son preferentes.
-        /// </summary>
         public bool IsEligible(Customer customer)
         {
             if (!IsExpress)
@@ -40,17 +38,13 @@ namespace SimMarket
             return customer.IsPreferent || customer.TotalProducts <= SimulationConfig.EXPRESS_LANE_MAX_PRODUCTS;
         }
 
-        /// <summary>
         /// Determina si la caja puede aceptar al cliente (es elegible y la caja no está llena).
-        /// </summary>
         public bool CanAccept(Customer customer)
         {
             return !IsFull && IsEligible(customer);
         }
 
-        /// <summary>
         /// Agrega un cliente a la cola de la caja si tiene espacio disponible.
-        /// </summary>
         public void Enqueue(Customer customer)
         {
             if (IsFull)
@@ -61,11 +55,9 @@ namespace SimMarket
             Queue.Enqueue(customer);
         }
 
-        /// <summary>
         /// Calcula el tiempo de espera estimado de la caja en iteraciones según la fórmula del PDF:
         /// Tj = sum_{i=1}^{nj} ceil(Pij / Vj)
         /// donde Pij son los artículos pendientes de procesar del cliente i y Vj es ProductsPerIteration.
-        /// </summary>
         public int EstimatedWaitTime()
         {
             if (Queue.Empty)
@@ -85,11 +77,9 @@ namespace SimMarket
             return totalWaitTime;
         }
 
-        /// <summary>
         /// Procesa los artículos del cliente en la primera posición de la cola en esta iteración.
         /// Si el cliente finaliza todos sus artículos, se retira de la cola.
         /// El siguiente cliente comenzará a ser atendido en la siguiente iteración.
-        /// </summary>
         public void ProcessIteration()
         {
             if (Queue.Empty)
